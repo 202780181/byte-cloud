@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build"
   },
   "dependencies": {
     "@remix-run/node": "^1.7.0",
@@ -13,6 +15,8 @@
   },
   "devDependencies": {
     "@remix-run/dev": "^1.7.0",
-    "@remix-run/eslint-config": "^1.7.0"
+    "@remix-run/eslint-config": "^1.7.0",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6"
   }
 }
