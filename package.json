@@ -9,5 +9,13 @@
   },
   "keywords": [],
   "author": "aaron",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "typescript": "^4.8.2"
+  }
 }
