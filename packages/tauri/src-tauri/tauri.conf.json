@@ -2,13 +2,13 @@
   "build": {
     "beforeDevCommand": "",
     "beforeBuildCommand": "",
-    "devPath": "../src",
-    "distDir": "../src",
+    "devPath": "./src",
+    "distDir": "./src",
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "tarui-demo",
-    "version": "0.0.0"
+    "productName": "tauri",
+    "version": "1.0.0"
   },
   "tauri": {
     "allowlist": {
@@ -58,7 +58,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "tarui-demo",
+        "title": "tauri",
         "width": 800
       }
     ]
