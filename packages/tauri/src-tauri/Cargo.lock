@@ -2706,7 +2706,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "tarui-demo"
+name = "tarui"
 version = "0.0.0"
 dependencies = [
  "serde",
