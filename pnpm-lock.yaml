@@ -4,11 +4,13 @@ importers:
 
   .:
     specifiers:
+      chalk: ^5.0.1
       eslint: ^8.22.0
       react: ^18.2.0
       react-dom: ^18.2.0
       typescript: ^4.8.2
     dependencies:
+      chalk: 5.0.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
@@ -2595,6 +2597,11 @@ packages:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
     dev: true
+
+  /chalk/5.0.1:
+    resolution: {integrity: sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: false
 
   /character-entities-html4/2.1.0:
     resolution: {integrity: sha512-1v7fgQRj6hnSwFpq1Eu0ynr/CDEw0rXo2B61qXrLNdHZmPKgb7fqS1a2JwF0rISo9q77jDI8VMEHoApn8qDoZA==}

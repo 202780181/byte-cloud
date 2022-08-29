@@ -5,13 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "run:web": "",
+    "web": "pnpm --filter @byte-cloud/web dev",
+    "web:build": "pnpm --filter @byte-cloud/web build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "aaron",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^5.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
