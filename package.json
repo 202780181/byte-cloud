@@ -7,6 +7,8 @@
   "scripts": {
     "web": "pnpm --filter @byte-cloud/web dev",
     "web:build": "pnpm --filter @byte-cloud/web build",
+    "tauri": "pnpm --filter @byte-cloud/tarui tauri",
+    "tauri:build": "pnpm --filter @byte-cloud/tarui build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
