@@ -1,8 +1,8 @@
 {
   "build": {
     "beforeDevCommand": "",
-    "beforeBuildCommand": "",
-    "devPath": "../src",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:8081",
     "distDir": "../src",
     "withGlobalTauri": true
   },
