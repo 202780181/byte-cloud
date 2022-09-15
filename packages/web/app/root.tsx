@@ -7,15 +7,28 @@ import {
   Scripts,
   ScrollRestoration
 } from '@remix-run/react'
+import { LinksFunction } from '@remix-run/node'
+import globalStyle from '~/styles/global/index.css'
 
 export const meta: MetaFunction = () => ({
-  charset: 'utf-8',
-  title: 'New Remix App',
-  viewport: 'width=device-width,initial-scale=1'
+  charset: "utf-8",
+  title: "1024云盘",
+  "apple-mobile-web-app-capable" : "yes",
+  "apple-touch-fullscreen" : "yes",
+  "App-Config" : "fullscreen=yes,useHistoryState=yes,transition=yes",
+  "format-detection" : "telephone=no",
+  "apple-mobile-web-app-status-bar-style" : "black",
+  "data-spm": "1024drive",
+  viewport: "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
 })
 
-export const ErrorBoundary = ({ error }:any) => {
-  console.error(error)
+export const links:LinksFunction = ()=> {
+  return [
+    { rel: "stylesheet", href: globalStyle }
+  ]
+}
+
+export const ErrorBoundary = ({ error }: any) => {
   return (
     <html>
     <head>
