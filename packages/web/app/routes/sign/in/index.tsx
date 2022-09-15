@@ -1,5 +1,5 @@
 import type { LinksFunction } from "@remix-run/node";
-import signStyle from '~/styles/sign/index.css';
+import signStyle from '~/styles/sign/sign.css';
 export default function signIn() {
   return (
     <div className="home" data-with-download="true">

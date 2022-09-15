@@ -8,7 +8,7 @@ import {
   ScrollRestoration
 } from '@remix-run/react'
 import { LinksFunction } from '@remix-run/node'
-import globalStyle from '~/styles/global/index.css'
+import globalStyle from '~/styles/global/global.css'
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
