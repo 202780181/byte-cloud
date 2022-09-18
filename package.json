@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "web": "pnpm --filter @byte-cloud/web dev",
-    "web:build": "pnpm --filter @byte-cloud/web build",
+    "web:build": "pnpm --filter @byte-cloud/web start",
     "tauri": "pnpm --filter @byte-cloud/tarui tauri",
     "tauri:build": "pnpm --filter @byte-cloud/tarui build",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,4 +1,5 @@
 import type { MetaFunction } from '@remix-run/node'
+import antd from 'antd/dist/antd.css';
 import {
   Links,
   LiveReload,
@@ -24,7 +25,8 @@ export const meta: MetaFunction = () => ({
 
 export const links:LinksFunction = ()=> {
   return [
-    { rel: "stylesheet", href: globalStyle }
+    { rel: "stylesheet", href: globalStyle },
+    { rel: "stylesheet", href: antd }
   ]
 }
 
