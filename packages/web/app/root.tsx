@@ -57,14 +57,14 @@ export default function App() {
       <Links />
     </head>
     <body>
-    <Outlet />
     <MyContext.Provider value={{
       user: user,
       setUser,
       isLoggedIn: !!user,
     }}>
-      <ScrollRestoration />
+      <Outlet />
     </MyContext.Provider>
+    <ScrollRestoration />
     <Scripts />
     <LiveReload />
     </body>
