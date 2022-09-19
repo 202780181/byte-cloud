@@ -7,7 +7,7 @@
   "scripts": {
     "web": "pnpm --filter @byte-cloud/web dev",
     "web:build": "pnpm --filter @byte-cloud/web start",
-    "tauri": "pnpm --filter @byte-cloud/tarui tauri",
+    "tauri": "concurrently \"pnpm run web\" \"pnpm --filter @byte-cloud/tarui tauri\"",
     "tauri:build": "pnpm --filter @byte-cloud/tarui build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.0.1",
+    "concurrently": "^7.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
