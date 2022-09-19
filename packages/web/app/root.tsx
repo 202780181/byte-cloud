@@ -1,5 +1,5 @@
 import type { MetaFunction } from '@remix-run/node'
-import antd from 'antd/dist/antd.css';
+import antd from 'antd/dist/antd.css'
 import {
   Links,
   LiveReload,
@@ -12,21 +12,21 @@ import { LinksFunction } from '@remix-run/node'
 import globalStyle from '~/styles/global/global.css'
 
 export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "1024云盘",
-  "apple-mobile-web-app-capable" : "yes",
-  "apple-touch-fullscreen" : "yes",
-  "App-Config" : "fullscreen=yes,useHistoryState=yes,transition=yes",
-  "format-detection" : "telephone=no",
-  "apple-mobile-web-app-status-bar-style" : "black",
-  "data-spm": "1024drive",
-  viewport: "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+  charset: 'utf-8',
+  title: '1024云盘',
+  'apple-mobile-web-app-capable': 'yes',
+  'apple-touch-fullscreen': 'yes',
+  'App-Config': 'fullscreen=yes,useHistoryState=yes,transition=yes',
+  'format-detection': 'telephone=no',
+  'apple-mobile-web-app-status-bar-style': 'black',
+  'data-spm': '1024drive',
+  viewport: 'width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover'
 })
 
-export const links:LinksFunction = ()=> {
+export const links: LinksFunction = () => {
   return [
-    { rel: "stylesheet", href: globalStyle },
-    { rel: "stylesheet", href: antd }
+    { rel: 'stylesheet', href: globalStyle },
+    { rel: 'stylesheet', href: antd }
   ]
 }
 
