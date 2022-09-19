@@ -1,7 +1,8 @@
 import type { LinksFunction } from '@remix-run/node'
 import signStyle from '~/styles/sign/sign.css'
 import { Input, Checkbox } from 'antd'
-import { useState, useEffect, FC } from 'react'
+import { useState, useEffect, useContext, FC } from 'react'
+import MyContext from '~/lib/context'
 
 const LoginType: FC<{ type: Number, func: Function }> = (props: any) => {
   const { type, func } = props
@@ -79,6 +80,7 @@ const LoginViewPassword = () => {
   )
 }
 export default function signIn() {
+  const { isLoggedIn, setUser } = useContext(MyContext)
   // 0: 短信登录 1:账号登录  2:扫码登录
   const [loginType, setLoginType] = useState<number>(0)
   useEffect(() => {

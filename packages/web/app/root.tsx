@@ -9,6 +9,8 @@ import {
   ScrollRestoration
 } from '@remix-run/react'
 import { LinksFunction } from '@remix-run/node'
+import {useState} from 'react'
+import MyContext from './lib/context'
 import globalStyle from '~/styles/global/global.css'
 
 export const meta: MetaFunction = () => ({
@@ -47,6 +49,7 @@ export const ErrorBoundary = ({ error }: any) => {
 }
 
 export default function App() {
+  const [user, setUser] = useState<{ name: string; email: string } | null>(null)
   return (
     <html lang='en'>
     <head>
@@ -55,7 +58,13 @@ export default function App() {
     </head>
     <body>
     <Outlet />
-    <ScrollRestoration />
+    <MyContext.Provider value={{
+      user: user,
+      setUser,
+      isLoggedIn: !!user,
+    }}>
+      <ScrollRestoration />
+    </MyContext.Provider>
     <Scripts />
     <LiveReload />
     </body>
