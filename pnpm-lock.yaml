@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@serverless-devs/fc-http': ^1.0.1
       chalk: ^5.0.1
       concurrently: ^7.4.0
       eslint: ^8.22.0
@@ -11,6 +12,7 @@ importers:
       react-dom: ^18.2.0
       typescript: ^4.8.2
     dependencies:
+      '@serverless-devs/fc-http': 1.0.1
       chalk: 5.0.1
       concurrently: 7.4.0
       react: 18.2.0
@@ -1944,6 +1946,18 @@ packages:
   /@rushstack/eslint-patch/1.1.4:
     resolution: {integrity: sha512-LwzQKA4vzIct1zNZzBmRKI9QuNpLgTQMEjsQLf3BXuGYb3QPTP4Yjf6mkdX+X1mYttZ808QpOwAzZjv28kq7DA==}
     dev: true
+
+  /@serverless-devs/fc-http/1.0.1:
+    resolution: {integrity: sha512-ohZbDwShBXY7AvVRHpyWFPDkODbwuUjnC19OQYXxO+7M7jajLG5MHXtC0Ko4g5NRL/Cy4uqctPe/kfAjfQx75g==}
+    dependencies:
+      '@serverless-devs/serverless-http': 3.0.1
+      raw-body: 2.5.1
+    dev: false
+
+  /@serverless-devs/serverless-http/3.0.1:
+    resolution: {integrity: sha512-YX07BIrfDxw4qHxu6vpi6LC1m9BA48Pqpav5mvNUaD0k3+R0aKKIjTE+Ns75uzZLodss7NJ1rLdDoh3uxgQMtQ==}
+    engines: {node: '>=12.0'}
+    dev: false
 
   /@sindresorhus/is/4.6.0:
     resolution: {integrity: sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==}
